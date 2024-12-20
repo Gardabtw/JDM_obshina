@@ -38,5 +38,8 @@ def buy_car_list(request):
 
 @login_required(login_url='/register/')
 def car_detail(request, car_id):
-    car = Car.objects.get(id=car_id)
+    try:
+        car = Car.objects.get(id=car_id)
+    except Car.DoesNotExist:
+        raise Http404("Машина не найдена")
     return render(request, 'cars/car_detail.html', {'car': car})
