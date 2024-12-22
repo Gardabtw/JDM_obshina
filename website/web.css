@@ -1,18 +1,19 @@
 body {
-    margin: 0; /* Убираем отступы */
-    height: 100vh; /* Высота окна браузера */
-    background-color: rgb(24, 23, 23); /* Черный цвет фона */
-    position: relative; /* свойство CSS для более удобного размещения по пикселям*/
+  margin: 0; /* Убираем внешние отступы */
+  height: 100vh; /* Высота равна высоте окна браузера */
+  background-color: rgb(255, 255, 255); /* Белый фон */
+  position: relative; /* Для управления позиционированием */
+  overflow: hidden; /* Убираем вертикальную прокрутку */
 }
 h1 {
     font-size: 35px;
     font-style: normal;
     text-align: center;
-    color: white
+    color: rgb(0, 0, 0)
 }
 .introdctuion{
   font-size: 17px;
-color: white;
+color: rgb(0, 0, 0);
 position: relative;
 left: 200px;
 top: 250px;
@@ -139,9 +140,55 @@ top: 250px;
 
 .rectangle-1 {
   position: relative;
-  top: 600px;
-  left: 20px;
+  top: 600px; /* Если нужно опустить */
   background-color: black;
   height: 200px;
-  width: 100%;
+  width: 100vw; /* Задает ширину равную ширине окна браузера */
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем внутренние отступы */
+}
+.container1 {
+  display: flex;
+  gap: 20px;
+}
+
+.rectangle-2 {
+  position: relative;
+  top: 400px;
+  left: 10px;
+  
+  background-color: black;
+  height: 200px;
+  width: 40px;
+}
+.mainimage img {
+  position: absolute;
+  top: 120px; /* Настройте позицию */
+  left: 900px;
+  border: 5px solid black; /* Толщина и цвет рамки */
+  border-radius: 10px; /* Закругленные углы рамки (если нужно) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Добавляет тень для более красивого эффекта */
+}
+.gardatext, .pisktext {
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+  color: white;
+  display: flex; /* Устанавливает flex-контейнер */
+  align-items: center; /* Выравнивание текста и ссылки по вертикали */
+  position: relative;
+  top: 200px; /* Оставляем ваш отступ сверху */
+}
+
+.gardatext a, .pisktext a {
+  position: relative;
+  left: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none; /* Убирает стандартное подчёркивание */
+  margin-left: 10px; /* Добавляем отступ между текстом и ссылкой */
+}
+.gardatext a:hover, .pisktext a:hover {
+  color: rgb(196, 10, 196); /* Цвет ссылки при наведении */
+  text-decoration: underline; /* Добавляем подчёркивание */
 }
