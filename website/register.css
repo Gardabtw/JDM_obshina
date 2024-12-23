@@ -1,8 +1,57 @@
 body {
-margin: 0;
-height: 100vh;
-background-color: rgb(24, 23, 23);
+    margin: 0; /* Убираем внешние отступы */
+    height: 100vh; /* Высота равна высоте окна браузера */
+    background-color: rgb(255, 255, 255); /* Белый фон */
+    position: relative; /* Для управления позиционированием */
+    overflow: hidden; /* Убираем вертикальную прокрутку */
+  } 
+.registration-form {
+    max-width: 350px;
+    margin: 50px auto; /* Центрируем форму */
+    padding: 20px;
+    background-color: #f7f7f7; /* Светло-серый фон формы */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
 }
-h1 {
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Тёмный цвет текста */
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Серый цвет границ */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000; /* Зелёная кнопка */
     color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.registration-form button:hover {
+    background-color: #a04598; /* Более тёмный оттенок зелёного при наведении */
+}
+.rectangle-1 {
+    position: relative;
+    top: 435px; /* Если нужно опустить */
+    background-color: black;
+    left: -5px;
+    height: 150px;
+    width: 101vw; /* Задает ширину равную ширине окна браузера */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+  }
+  
