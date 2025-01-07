@@ -43,3 +43,4 @@ def car_detail(request, car_id):
     except Car.DoesNotExist:
         raise Http404("Машина не найдена")
     return render(request, 'cars/car_detail.html', {'car': car})
+
