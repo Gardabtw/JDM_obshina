@@ -1,15 +1,35 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVENTORY</title>
-    <link rel="stylesheet" href="{% static 'cars/css/seller.css' %}">
+    <title>JDM Лоты</title>
+    <link rel="stylesheet" href="seller.css">
 </head>
 <body>
-    <div class="lots_sell">
-    <h1>JDM-Лоты на продажу</h1>
-</div>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Иконки с текстом при наведении -->
+            <a href="https://gardabtw.github.io/JDM_obshina/" class="icon home-icon" title="Вернуться на сайт"></a>
+            <a href="storylist.html" class="icon list-icon" title="Список продаж"></a>
+            <a href="car_detail.html" class="icon add-icon" title="Добавить лот"></a>
+        </div>
+        <div class="main">
+            <div class="top-section">
+                <h1>JDM-Лоты на продажу</h1>
+                <div class="divider"></div>
+            </div>
+            <div class="center-content">
+                <div class="text">
+                    <p>Похоже у вас нет JDM-лотов на продажи...</p>
+                </div>
+                <div class="button-sell">
+                    <a href="car_detail.html">
+                        <button class="button-50" role="button">Add car for selling</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
