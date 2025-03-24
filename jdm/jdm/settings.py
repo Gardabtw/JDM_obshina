@@ -78,10 +78,7 @@ WSGI_APPLICATION = 'jdm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'JDM',
-        'USER': 'Garda',
-        'PASSWORD': '197319751998Vl',
-        'HOST': 'localhost',  
+        'NA 
         'PORT': '3306',       
     }
 }
